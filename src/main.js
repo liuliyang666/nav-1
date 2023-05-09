@@ -4,8 +4,11 @@ const x = localStorage.getItem("x");
 //读取当前网站下的x，如果x能成功的变成一个对象，那就把这个对象放在hashMap里；如果不能，我就把它初始化成有两项的数组
 const xObject = JSON.parse(x);
 const hashMap = xObject || [
-  { logo: "A", url: "https://www.acfun.cn" },
   { logo: "B", url: "https://m.bilibili.com" },
+  { logo: "C", url: "https://codepen.io" },
+  { logo: "I", url: "https://www.iconfont.cn" },
+  { logo: "J", url: "https://juejin.cn" },
+  { logo: "T", url: "https://cloud.tencent.com/" },
 ];
 const simplifyUrl = (url) => {
   return url
