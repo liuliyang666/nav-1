@@ -109,7 +109,7 @@ var $lastLi = $siteList.find("li.last");
 var x = localStorage.getItem("x");
 //读取当前网站下的x，如果x能成功的变成一个对象，那就把这个对象放在hashMap里；如果不能，我就把它初始化成有两项的数组
 var xObject = JSON.parse(x);
-var hashMap = xObject || [{ logo: "B", url: "https://m.bilibili.com" }, { logo: "C", url: "https://codepen.io" }, { logo: "I", url: "https://www.iconfont.cn" }, { logo: "J", url: "https://juejin.cn" }, { logo: "T", url: "https://cloud.tencent.com/" }];
+var hashMap = xObject || [{ logo: "B", url: "https://bilibili.com" }, { logo: "C", url: "https://codepen.io" }, { logo: "I", url: "https://www.iconfont.cn" }, { logo: "J", url: "https://juejin.cn" }, { logo: "T", url: "https://cloud.tencent.com/" }];
 var simplifyUrl = function simplifyUrl(url) {
   return url.replace("https://", "").replace("http://", "").replace("www.", "").replace(/\/.*/, ""); //删除 /
 };
@@ -161,4 +161,4 @@ window.onbeforeunload = function () {
 //     }
 // })
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.4bd77caa.map
+//# sourceMappingURL=main.c71c1a89.map
